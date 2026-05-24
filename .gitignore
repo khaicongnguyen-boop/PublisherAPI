@@ -7,3 +7,8 @@
 /.vs/PublisherAPI
 /Publisher.API/obj
 /Publisher.Data/obj
+/Publisher.Business/obj/Debug/net8.0
+/Publisher.Business/obj
+/Publisher.API/bin/Debug/net8.0
+/Publisher.Business/bin/Debug/net8.0
+/Publisher.Data/bin/Debug/net8.0
