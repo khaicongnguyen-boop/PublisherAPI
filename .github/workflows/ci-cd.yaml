@@ -33,3 +33,17 @@ jobs:
       with:
         name: mstest-results
         path: "**/TestResults/*.trx"
+
+    - id: publish
+      name: Publish
+      run: dotnet publish "Publisher.API/Publisher.API.csproj" -c Release -o ./publish --self-contained -r linux-x64 /p:UseAppHost=true
+
+    - name: Zip Artifact
+      run: zip app.zip ./publish
+
+    - id: upload
+      name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: dotnet-webapp
+        path: app.zip
