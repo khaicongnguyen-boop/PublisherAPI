@@ -12,3 +12,5 @@
 /Publisher.API/bin/Debug/net8.0
 /Publisher.Business/bin/Debug/net8.0
 /Publisher.Data/bin/Debug/net8.0
+/Publisher.Business.Test/obj
+/Publisher.Business.Test/bin/Debug/net8.0
